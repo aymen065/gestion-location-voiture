@@ -1,0 +1,186 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url("rue.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.titre {
+	font-family: 'TT Hoves Variable', -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 1000;
+	line-height: 45px;
+	font-size: 50px;
+	color: aliceblue;
+	position: relative;
+	left: 100px;
+	top: 300px;
+	display: inline-block;
+}
+
+.aff {
+	background: white;
+	width:90%;
+	height:30px;
+	margin : 0 5%;
+	
+}
+
+.bloc {
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 65%;
+	height: auto;
+	margin: 50px 0px 0 50px;
+	padding: 50px;
+	display: inline-block;
+	position: absolute;
+	right: 17.5%;
+	top: 5%;
+	bottom: 5%;
+	border-radius: 20px;
+	align-self: center;
+}
+
+.formulaire {
+	position: relative;
+	margin: 0 20px;
+	top: 5%;
+	bottom: 5%;
+	width: auto;
+	height: 90%;
+	align-self: center;
+	background: #333;
+	border-radius: 18px;
+	padding-left: 70px;
+}
+
+.navigation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 7%;
+	background-color: rgb(39, 38, 38);
+}
+
+.zoneText {
+	width: 300px;
+	height: 40px;
+	margin-left: 50px;
+	padding-left: 15px;
+	font-family: 'serif';
+	font-weight: 700;
+	font-size: 16px;
+	vertical-align: Top;
+	background-color: #edf5f8;
+	border-radius: 10px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.titreForm {
+	font-family: "Inter";
+	color: #edf5f8;
+	font-weight: 700;
+	font-size: 16px;
+	vertical-align: Top;
+	margin-left: 30px;
+}
+
+.bouton {
+	border-color: #652a05;
+	border: 1px;
+	background-color: #313132;
+	border-radius: 10px;
+	width: 25%;
+	height: 40px;
+	margin-top: 60px;
+	font-family: "Inter";
+	font-weight: 700;
+	font-size: 16px;
+	vertical-align: Top;
+	margin-left: 55px;
+	color: #652a05;
+	border-radius: 10px;
+	border: 0px;
+	text-align: center;
+}
+
+.lienBouton {
+	font-family: "Inter";
+	font-weight: 700;
+	font-size: 16px;
+	vertical-align: Top;
+	color: whitesmoke;
+	border: 0px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #015c92;
+	padding: 10px 20px;
+	text-decoration: black;
+	text-align: center;
+	transition: .5s;
+	animation: slideDown 4s;
+}
+
+.lien {
+	margin-top: 10px;
+	margin-right: 40px;
+}
+
+input[type="submit"]:hover {
+	background: #ffd700;
+	color: #333;
+}
+
+a[class="lienBouton"]:hover {
+	background-color: #015d92c8;
+	border-left: 0px;
+	border-top: 0px;
+	color: rgb(0, 0, 0);
+}
+
+a[class="flat-button"]:hover {
+	background: #ffd700;
+	color: #333;
+	text-decoration: none;
+}
+
+.inForm {
+	position: relative;
+	top: 10%;
+	align-self: center;
+}
+
+.flat-button {
+	color: #ffd700;
+	font-size: 11px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	padding: 8px 10px;
+	border: 1px solid #ffd700;
+	border-radius: 4px;
+	background: 0 0;
+	text-transform: uppercase;
+	float: right;
+	text-align: center;
+	margin-right: 10px;
+	position: relative;
+	font-weight: 300;
+	font-size: 16px;
+	vertical-align: Top;
+	margin-left: 55px;
+	align-self: center;
+}
+
+.ligne {
+	background-color: #edf5f8;
+	position: relative;
+	top: 80px;
+	width: 60%;
+}
