@@ -1,0 +1,20 @@
+#
+# Build stage
+#
+
+
+
+
+#FROM maven:3.6-jdk-8-alpine AS build
+#COPY src /home/app/src
+#COPY pom.xml /home/app
+#WORKDIR /home/app
+#RUN mvn install
+
+#
+# Package stage
+#
+FROM openjdk:8-jdk-alpine
+COPY --from=build /home/app/target/gestion_location_voiture-0.0.1-SNAPSHOT /usr/local/lib/app.jar
+EXPOSE 8090
+ENTRYPOINT ["java","-jar","/usr/local/lib/app.jar"]

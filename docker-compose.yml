@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  
+  back:
+    networks:
+      - location
+    environment: 
+      SPRING_DATASOURCE_URL: jdbc:mysql://location-voiture.cgraiekmhyn4.us-east-1.rds.amazonaws.com/QRQC?createDatabaseIfNotExist=true&autoReconnect=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootroot
+    container_name: backend
+    build: 
+      dockerfile: DockerFileBack
+      context: "./"
+    ports:
+       - "90:8090"
+    restart: on-failure
+
+networks:
+  location: 
