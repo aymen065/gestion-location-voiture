@@ -1,7 +1,7 @@
 
 spring:
   datasource:
-    url: jdbc:mysql://bd:3306/locationvoiture?createDatabaseIfNotExist=true&autoReconnect=true
+    url: jdbc:mysql://locationvoiture.cgraiekmhyn4.us-east-1.rds.amazonaws.com/locationvoiture?createDatabaseIfNotExist=true&autoReconnect=true
     username: root
     password: rootroot
     driver-class-name: com.mysql.cj.jdbc.Driver
